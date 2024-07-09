@@ -1,0 +1,81 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #f0f0f0;
+    color: #0D0D0D;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+header {
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0D0D0D;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px; /* הרחבת הקונטיינר */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #D9B26A;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #D9B26A;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #0D0D0D;
+    margin-top: 20px;
+}

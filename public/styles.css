@@ -1,0 +1,215 @@
+:root {
+    --primary-color: #D9B26A;
+    --secondary-color: #0D0D0D;
+    --white-color: #FFFFFF;
+    --light-primary: #E6C992;
+    --dark-primary: #BF9A5A;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+header {
+    background-color: rgba(13, 13, 13, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(13, 13, 13, 0.1);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container p {
+    text-align: right;
+}
+
+.glassmorphism {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(217, 178, 106, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(13, 13, 13, 0.37);
+}
+
+button, #approveButton {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, #approveButton:hover {
+    background-color: var(--dark-primary);
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: var(--dark-primary);
+    transform: scale(1.05);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.service-item {
+    background-color: rgba(217, 178, 106, 0.3);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+#approveButton {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p, li {
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px 0 rgba(13, 13, 13, 0.37);
+}
+
+footer {
+    background-color: rgba(13, 13, 13, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: var(--secondary-color);
+}
+
+.container ul {
+    text-align: right;
+    list-style-position: inside;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.service-item p {
+    text-align: right;
+}
